@@ -1,0 +1,85 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title >
+      <ion-row class="align-items: center">
+        
+        <ion-col>
+          <div>
+            <br>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            Drink
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <br>
+          </div>
+        </ion-col>
+      
+      </ion-row>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content [fullscreen]="true" color="secondary">
+  <ion-list>
+    <ion-list-header>
+      Menu
+    </ion-list-header>
+
+    <ion-item *ngFor="let menu of listMenu.dataMenu">
+      <ion-avatar slot="start">
+        <img src="{{menu.images}}">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{menu.namaMenu}}</h2>
+        <h3>{{menu.jenisMenu}}</h3>
+        <p>{{menu.deskripsi}}</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Food
+    </ion-list-header>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/image/11.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Nasi Goreng</h2>
+        <h3>Regular / Larger</h3>
+        <p>Nasi goreng yang di buat dengan sentuhan chef handal</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/image/12.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Rice Bowl</h2>
+        <h3>Meat / Chicken</h3>
+        <p>Masakan yang mempunyai citarasa khas</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/image/13.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Frenc fries</h2>
+        <h3>Regular / Larger</h3>
+        <p>Kentang goreng dari kentang kentang pilihan terbaik</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
